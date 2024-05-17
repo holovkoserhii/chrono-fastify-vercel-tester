@@ -11,11 +11,5 @@
       "src": "./index.js",
       "use": "@vercel/node"
     }
-  ],
-  "crons": [
-    {
-      "path": "/api/cron",
-      "schedule": "5 0 0 0 *"
-    }
   ]
 }
