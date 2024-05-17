@@ -22,7 +22,8 @@ server.get('/', async () => {
 
 server.get('/api/cron', async () => {
   try {
-    console.log('triggered by cron')
+    console.log('triggered by cron');
+    console.log(process.env.CRON_SECRET)
     return 'triggered by cron'
   } catch (error) {
     return {
