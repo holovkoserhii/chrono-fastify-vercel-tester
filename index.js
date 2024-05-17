@@ -19,6 +19,7 @@ server.get('/', async () => {
   }
 })
 
+
 server.get('/api/cron', async () => {
   try {
     console.log('triggered by cron')
