@@ -1,6 +1,9 @@
 {
   "version": 2,
-  "crons": [],
+  "crons": [{
+    "schedule": "* * * * *",
+    "path": "/api/cron"
+  }],
   "routes": [
     {
       "src": "/(.*)",
