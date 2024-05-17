@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "crons": [{
-    "schedule": "* * * * *",
-    "path": "/api/cron"
-  }],
+  "crons": [
+    {
+      "schedule": "00 00 * * *",
+      "path": "/api/cron"
+    }
+  ],
   "routes": [
     {
       "src": "/(.*)",
