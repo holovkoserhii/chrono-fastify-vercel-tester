@@ -1,8 +1,8 @@
 const fastify = require('fastify')
 const { CronJob } = require('cron');
 
-new CronJob('30 * * * * *', () => {
-  console.log('hello from console')
+new CronJob('10 00 15 * * *', () => {
+  console.log('hello from cron')
 }, null, true);
 
 const port = process.env.PORT || 3000
