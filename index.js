@@ -9,9 +9,20 @@ const port = process.env.PORT || 3000
 
 const server = fastify();
 
-server.get('/', async (req, res) => {
+server.get('/', async () => {
   try {
     return 'hello'
+  } catch (error) {
+    return {
+      error
+    }
+  }
+})
+
+server.get('/api/cron', async () => {
+  try {
+    console.log('triggered by cron')
+    return 'triggered by cron'
   } catch (error) {
     return {
       error
